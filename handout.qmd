@@ -85,7 +85,19 @@ Click the green \textbf{Code} button $\rightarrow$ \textbf{Download ZIP} (no acc
 \subsection{Step 1 — Context}
 
 \begin{promptbox}[Prompt]
-I've uploaded two files: a billing transactions dataset (invoices\_sample\_50k.csv) and its data dictionary (Data\_Dictionary.csv). Please describe the dataset — what does each row represent, what are the key fields, and what business questions could this data answer?
+I've uploaded two files.
+
+\texttt{<context>}\\
+\hspace*{1em}\texttt{<file>}invoices\_sample\_50k.csv --- a billing transactions dataset\texttt{</file>}\\
+\hspace*{1em}\texttt{<file>}Data\_Dictionary.csv --- field-level documentation for the dataset\texttt{</file>}\\
+\texttt{</context>}
+
+\texttt{<task>}\\
+\hspace*{1em}Please describe the dataset:\\
+\hspace*{1em}--- What does each row represent?\\
+\hspace*{1em}--- What are the key fields?\\
+\hspace*{1em}--- What business questions could this data answer?\\
+\texttt{</task>}
 \end{promptbox}
 
 \begin{followupbox}[Clarifying Follow-ups]
@@ -99,7 +111,20 @@ Replace the observations with 0 that are actual missing with truly missing value
 \subsection{Step 2 — Objective}
 
 \begin{promptbox}[Prompt]
-Using this invoice data, identify which industries have the highest rate of late payments (where DAYS\_TO\_PAY > 30). Show me the top 5 industries ranked by late payment rate, with the average days to pay for each.
+\texttt{<context>}\\
+\hspace*{1em}Use the invoice data already uploaded.\\
+\texttt{</context>}
+
+\texttt{<objective>}\\
+\hspace*{1em}Identify which industries have the highest rate of late payments\\
+\hspace*{1em}(where DAYS\_TO\_PAY > 30).\\
+\texttt{</objective>}
+
+\texttt{<constraints>}\\
+\hspace*{1em}--- Rank the top 5 industries by late payment rate\\
+\hspace*{1em}--- Include the average days to pay for each\\
+\hspace*{1em}--- Show results as a table\\
+\texttt{</constraints>}
 \end{promptbox}
 
 \begin{followupbox}[Clarifying Follow-up]
@@ -109,17 +134,45 @@ Can you break this down further by payment type (Check vs.\ Wire Transfer vs.\ C
 \subsection{Step 3 — Reasoning}
 
 \begin{promptbox}[Prompt]
-Think step-by-step: For the industry with the highest late payment rate, what factors in the data might explain why? Consider payment terms, payment type, number of support cases, and customer size (employee count, revenue). Show your reasoning.
+\texttt{<context>}\\
+\hspace*{1em}Focus on the industry with the highest late payment rate\\
+\hspace*{1em}from the previous analysis.\\
+\texttt{</context>}
+
+\texttt{<task>}\\
+\hspace*{1em}Think step-by-step:\\
+\hspace*{1em}What factors in the data might explain why this industry\\
+\hspace*{1em}has the highest late payment rate?\\
+\texttt{</task>}
+
+\texttt{<factors\_to\_consider>}\\
+\hspace*{1em}--- Payment terms\\
+\hspace*{1em}--- Payment type\\
+\hspace*{1em}--- Number of support cases\\
+\hspace*{1em}--- Customer size (employee count, revenue)\\
+\texttt{</factors\_to\_consider>}
+
+\texttt{<instructions>}\\
+\hspace*{1em}Show your reasoning at each step.\\
+\texttt{</instructions>}
 \end{promptbox}
 
 \begin{followupbox}[Clarifying Follow-up]
-You mentioned employee count — is the relationship linear, or do mid-size companies behave differently than very small or very large ones?
+You mentioned employee count --- is the relationship linear, or do mid-size companies behave differently than very small or very large ones?
 \end{followupbox}
 
 \subsection{Step 4 — Evaluation}
 
 \begin{promptbox}[Prompt]
-Now critique your own analysis. What are the limitations of these conclusions? What data would you need to be more confident? Are there any potential biases in how this dataset was constructed?
+\texttt{<task>}\\
+\hspace*{1em}Now critique your own analysis.\\
+\texttt{</task>}
+
+\texttt{<evaluate>}\\
+\hspace*{1em}--- What are the limitations of these conclusions?\\
+\hspace*{1em}--- What data would you need to be more confident?\\
+\hspace*{1em}--- Are there any potential biases in how this dataset was constructed?\\
+\texttt{</evaluate>}
 \end{promptbox}
 
 \begin{followupbox}[Clarifying Follow-ups]
@@ -135,15 +188,30 @@ If I were presenting these findings to my collections team, what caveats should 
 \subsection{Combined C.O.R.E. Prompt}
 
 \begin{promptbox}[Prompt]
-I've uploaded a small business financial projections template. Please analyze it using the C.O.R.E. framework:
+I've uploaded a small business financial projections template.
+Please analyze it using the C.O.R.E. framework:
 
-\textbf{Context:} This is a small business financial model with revenue projections and expense assumptions.
+\texttt{<context>}\\
+\hspace*{1em}This is a small business financial model\\
+\hspace*{1em}with revenue projections and expense assumptions.\\
+\texttt{</context>}
 
-\textbf{Objective:} Forecast monthly cash inflows for the next 12 months based on the revenue assumptions in this workbook.
+\texttt{<objective>}\\
+\hspace*{1em}Forecast monthly cash inflows for the next 12 months\\
+\hspace*{1em}based on the revenue assumptions in this workbook.\\
+\texttt{</objective>}
 
-\textbf{Reasoning:} Walk through your assumptions step by step. What revenue line items are you using? How are you converting revenue projections to cash inflows? What timing assumptions are you making?
+\texttt{<reasoning>}\\
+\hspace*{1em}Walk through your assumptions step by step:\\
+\hspace*{1em}--- What revenue line items are you using?\\
+\hspace*{1em}--- How are you converting revenue projections to cash inflows?\\
+\hspace*{1em}--- What timing assumptions are you making?\\
+\texttt{</reasoning>}
 
-\textbf{Evaluation:} What are the biggest risks to this forecast? Where might the assumptions break down?
+\texttt{<evaluation>}\\
+\hspace*{1em}--- What are the biggest risks to this forecast?\\
+\hspace*{1em}--- Where might the assumptions break down?\\
+\texttt{</evaluation>}
 \end{promptbox}
 
 \begin{followupbox}[Clarifying Follow-up]
