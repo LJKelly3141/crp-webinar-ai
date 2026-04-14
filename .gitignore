@@ -1,0 +1,17 @@
+# R
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Quarto render output
+webinar_files/
+
+# OS
+.DS_Store
+
+# Large original dataset (sample is included)
+invoices_with_acct_and_cases_sample.csv
+
+# Superpowers internal docs
+docs/superpowers/

@@ -1,0 +1,188 @@
+---
+title: "Using AI to Analyze and Strengthen Your Business"
+subtitle: "Capital Readiness Program for Women Entrepreneurs"
+author: "Dr. Logan Kelly"
+institute: "University of Wisconsin–River Falls"
+date: "April 14, 2026"
+format:
+  revealjs:
+    theme: [white, custom.scss]
+    slide-number: true
+    footer: "Dr. Logan Kelly | UWRF | April 14, 2026"
+    width: 1280
+    height: 720
+    embed-resources: true
+---
+
+## Today's Plan
+
+1. **C.O.R.E. Framework** — A structured way to get useful output from AI
+2. **Live Demo** — Walk through C.O.R.E. on real business data
+3. **Your Action Items** — Three things to try this week
+
+---
+
+## The C.O.R.E. Framework
+
+| Component | What It Means | What You Do |
+|-----------|--------------|-------------|
+| **C**ontext | Situational awareness | Feed AI your actual business data |
+| **O**bjective | Strategic intent | Tell AI exactly what you want |
+| **R**easoning | Multi-step logic | Make AI show its work |
+| **E**valuation | Risk & validation | Ask AI to critique itself |
+
+::: {.aside}
+Jasimuddin (2026). "How FP&A Professionals Should Prompt AI in 2026." *FP&A Trends*.
+:::
+
+---
+
+## C — Context: Feed AI Your Data
+
+> "Context Engineering" is superseding prompt engineering as the critical skill for 2026.
+
+- Upload your **actual business files** — invoices, reports, records
+- AI establishes a "ground truth" from your data
+- Modern AI can process thousands of rows instantly
+
+::: {.aside}
+Jasimuddin (2026); Stellium Consulting (2026); Gonzalez de Villaumbrosia (2026).
+:::
+
+---
+
+## O — Objective: Say Exactly What You Want
+
+The **D.A.T.A.** framework for direct navigation:
+
+| Step | What It Means | Example |
+|------|--------------|---------|
+| **D**ata Source | Which file or tab | "Use the January invoice export" |
+| **A**ction | The sharp goal | "Identify top 5 late-paying industries" |
+| **T**echnical Constraints | What to exclude | "Ignore credit memos" |
+| **A**nswer Style | Output format | "Return a ranked table" |
+
+::: {.aside}
+Jasimuddin (2026); McKinsey (2025) — only 1% of companies considered AI "mature."
+:::
+
+---
+
+## R — Reasoning: Make AI Show Its Work
+
+- Prompt: **"Think step-by-step"** — forces auditable logic
+- AI shifts from "template filler" to **reasoning partner**
+- Chain of thought reduces hallucinations
+
+**Cautionary tale:** Deloitte Australia refunded part of an AU$440,000 contract — AI-generated report contained fabricated court quotes.
+
+::: {.aside}
+Jasimuddin (2026); Probert (2026). "How AI Is Transforming the Consulting Industry." *Whitehat SEO*.
+:::
+
+---
+
+## E — Evaluation: Verify Everything
+
+- Ask: **"Critique your own analysis. What are the limitations?"**
+- Human-in-the-loop is **non-negotiable**
+- EU AI Act takes effect August 2, 2026
+
+::: {.aside}
+Gonzalez de Villaumbrosia (2026); Jasimuddin (2026).
+:::
+
+---
+
+## Six AI Risks Every Business Should Know
+
+| Risk | What It Means for You |
+|------|----------------------|
+| **Adversarial input** | Carefully worded prompts can trick AI into leaking your data or ignoring safety rules |
+| **Data poisoning** | Malicious data slipped into training sets can corrupt the model's outputs |
+| **Model theft** | Competitors can probe your AI's API to reverse-engineer your proprietary logic |
+| **Privacy violations** | AI can "memorize" sensitive info (credit cards, patient notes) and echo it back |
+| **Autonomous misuse** | AI agents can be hijacked to send phishing emails or spam on your behalf |
+| **Model bias** | Biased outputs (hiring, lending) carry legal penalties — 70% of firms are unprepared |
+
+::: {.aside}
+SentinelOne (2026). "AI Risk Mitigation: Tools and Strategies for 2026."
+:::
+
+# Live Demo {.section-header}
+
+---
+
+## Demo: Invoice Collections Analysis
+
+**Let's walk through C.O.R.E. on a real billing dataset**
+
+- ~50,000 billing transactions
+- Each C.O.R.E. step as a separate prompt
+- Analyzing late payment patterns
+
+---
+
+## Demo: Cash Flow Forecasting
+
+**Now let's forecast cash inflows**
+
+- Small business financial projections template
+- All four C.O.R.E. steps in a single prompt
+- Scenario analysis: what if revenue drops 20%?
+
+# Takeaways {.section-header}
+
+---
+
+## What to Watch Out For
+
+| Risk | Key Fact |
+|------|---------|
+| **Hallucinations** | Deloitte case — fabricated court quotes (Probert, 2026) |
+| **Data leakage** | 68% of organizations affected (SentinelOne, 2026) |
+| **"Silent AI" liability** | Insurance may not cover AI errors (Probert, 2026) |
+| **Weak governance** | Only 17% prioritize compliance benchmarks (McKinsey, 2025) |
+
+---
+
+## 3 Things to Try This Week
+
+1. **Anonymize a file and practice D.A.T.A. prompts**
+   - Remove names/IDs, upload to ChatGPT or Claude *(Jasimuddin, 2026)*
+
+2. **Add a self-critique prompt to any AI output**
+   - "Audit this for errors or unsupported assumptions" *(Jasimuddin, 2026)*
+
+3. **Document your AI tools**
+   - List every AI tool and dataset your business uses *(SentinelOne, 2026)*
+
+---
+
+## Resources
+
+- **GitHub Repo** (coming soon) — slides, data, prompts
+- **Briefing documents** available upon request
+
+**Contact:** Dr. Logan Kelly | University of Wisconsin–River Falls
+
+---
+
+## References {.smaller}
+
+1. Badmus & Ekoh (2026). "The Impact of AI on Business Growth in SMEs." *IRE Journals*.
+2. David (2026). "AI in performance management." *MiHCM*.
+3. Gonzalez de Villaumbrosia (2026). "15 AI Business Use Cases in 2026." *Product School*.
+4. Jasimuddin (2026). "How FP&A Professionals Should Prompt AI in 2026." *FP&A Trends*.
+5. Mayer et al. (2025). "AI in the workplace." *McKinsey & Company*.
+6. Mehta (2026). "AI in Business: 7 Examples." *Crescendo.ai*.
+7. Perlstein (2026). "6 AI-powered Market Trend Analysis Tools." *Revuze*.
+8. Probert (2026). "How AI Is Transforming the Consulting Industry." *Whitehat SEO*.
+9. SentinelOne (2026). "AI Risk Mitigation: Tools and Strategies for 2026."
+10. Stellium Consulting (2026). "2026 AI Trends: What Enterprises Need to Know."
+
+---
+
+## Q&A {.center}
+
+Thank you!
