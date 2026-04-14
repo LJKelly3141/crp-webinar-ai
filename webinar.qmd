@@ -163,8 +163,13 @@ SentinelOne (2026). "AI Risk Mitigation: Tools and Strategies for 2026."
 
 **GitHub Repo:** [github.com/LJKelly3141/crp-webinar-ai](https://github.com/LJKelly3141/crp-webinar-ai)
 
-- Slides, data, prompts, and financial template — all free to download
-- Click the green **Code** button → **Download ZIP** (no account needed)
+| Resource | Direct Download |
+|----------|----------------|
+| Slides | [webinar.html](https://raw.githubusercontent.com/LJKelly3141/crp-webinar-ai/main/webinar.html) |
+| Handout | [handout.pdf](https://raw.githubusercontent.com/LJKelly3141/crp-webinar-ai/main/handout.pdf) |
+| Invoice Data | [invoices_sample_50k.csv](https://raw.githubusercontent.com/LJKelly3141/crp-webinar-ai/main/invoices_sample_50k.csv) |
+| Data Dictionary | [Data_Dictionary.csv](https://raw.githubusercontent.com/LJKelly3141/crp-webinar-ai/main/Data_Dictionary.csv) |
+| Financial Template | [Ventura Financial Projections](https://raw.githubusercontent.com/LJKelly3141/crp-webinar-ai/main/Ventura%20Financial%20Projections%20Template%20Jan%202022%20v3.xlsx) |
 
 **Logan Kelly, Ph.D.**
 
