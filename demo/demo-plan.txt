@@ -1,0 +1,152 @@
+================================================================================
+DEMO PLAN — Using AI to Analyze and Strengthen Your Business
+CRP Webinar | April 14, 2026
+================================================================================
+
+DEMO 1: INVOICE COLLECTIONS ANALYSIS
+================================================================================
+
+Upload these files first:
+  - invoices_sample_50k.csv
+  - Data_Dictionary.csv
+
+--------------------------------------------------------------------------------
+STEP 1 — CONTEXT
+--------------------------------------------------------------------------------
+
+I've uploaded two files.
+
+<context>
+  <file>invoices_sample_50k.csv — a billing transactions dataset</file>
+  <file>Data_Dictionary.csv — field-level documentation for the dataset</file>
+</context>
+
+<task>
+  Please describe the dataset:
+  - What does each row represent?
+  - What are the key fields?
+  - What business questions could this data answer?
+</task>
+
+--- FOLLOW-UP ---
+
+Which fields have the most missing data,
+and how might that affect any analysis we do?
+
+--------------------------------------------------------------------------------
+STEP 2 — OBJECTIVE
+--------------------------------------------------------------------------------
+
+<context>
+  Use the invoice data already uploaded.
+</context>
+
+<objective>
+  Identify which industries have the highest rate of late payments
+  (where DAYS_TO_PAY > 30).
+</objective>
+
+<constraints>
+  - Rank the top 5 industries by late payment rate
+  - Include the average days to pay for each
+  - Show results as a table
+</constraints>
+
+--- FOLLOW-UP ---
+
+Can you break this down further by payment type
+(Check vs. Wire Transfer vs. Credit Card)?
+
+--------------------------------------------------------------------------------
+STEP 3 — REASONING
+--------------------------------------------------------------------------------
+
+<context>
+  Focus on the industry with the highest late payment rate
+  from the previous analysis.
+</context>
+
+<task>
+  Think step-by-step:
+  What factors in the data might explain why this industry
+  has the highest late payment rate?
+</task>
+
+<factors_to_consider>
+  - Payment terms
+  - Payment type
+  - Number of support cases
+  - Customer size (employee count, revenue)
+</factors_to_consider>
+
+<instructions>
+  Show your reasoning at each step.
+</instructions>
+
+--- FOLLOW-UP ---
+
+You mentioned employee count —
+is the relationship linear,
+or do mid-size companies behave differently
+than very small or very large ones?
+
+--------------------------------------------------------------------------------
+STEP 4 — EVALUATION
+--------------------------------------------------------------------------------
+
+<task>
+  Now critique your own analysis.
+</task>
+
+<evaluate>
+  - What are the limitations of these conclusions?
+  - What data would you need to be more confident?
+  - Are there any potential biases in how this dataset was constructed?
+</evaluate>
+
+--- FOLLOW-UP ---
+
+If I were presenting these findings to my collections team,
+what caveats should I include?
+
+
+DEMO 2: CASH FLOW FORECASTING
+================================================================================
+
+Upload this file first:
+  - Ventura Financial Projections Template Jan 2022 v3.xlsx
+
+--------------------------------------------------------------------------------
+COMBINED C.O.R.E. PROMPT
+--------------------------------------------------------------------------------
+
+I've uploaded a small business financial projections template.
+Please analyze it using the C.O.R.E. framework:
+
+<context>
+  This is a small business financial model
+  with revenue projections and expense assumptions.
+</context>
+
+<objective>
+  Forecast monthly cash inflows for the next 12 months
+  based on the revenue assumptions in this workbook.
+</objective>
+
+<reasoning>
+  Walk through your assumptions step by step:
+  - What revenue line items are you using?
+  - How are you converting revenue projections to cash inflows?
+  - What timing assumptions are you making?
+</reasoning>
+
+<evaluation>
+  - What are the biggest risks to this forecast?
+  - Where might the assumptions break down?
+</evaluation>
+
+--- FOLLOW-UP ---
+
+What would happen to the forecast
+if revenue came in 20% below projections in Q3?
+Show me the revised monthly cash inflow numbers.
