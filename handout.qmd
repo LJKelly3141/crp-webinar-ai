@@ -88,8 +88,12 @@ Click the green \textbf{Code} button $\rightarrow$ \textbf{Download ZIP} (no acc
 I've uploaded two files: a billing transactions dataset (invoices\_sample\_50k.csv) and its data dictionary (Data\_Dictionary.csv). Please describe the dataset — what does each row represent, what are the key fields, and what business questions could this data answer?
 \end{promptbox}
 
-\begin{followupbox}[Clarifying Follow-up]
+\begin{followupbox}[Clarifying Follow-ups]
+Provide summary statistics of the data set. Focus on the possibility of using this data to forecast cash inflow.
+
 Which fields have the most missing data, and how might that affect any analysis we do?
+
+Replace the observations with 0 that are actual missing with truly missing values. Store the result as an xlsx file.
 \end{followupbox}
 
 \subsection{Step 2 — Objective}
@@ -118,7 +122,9 @@ You mentioned employee count — is the relationship linear, or do mid-size comp
 Now critique your own analysis. What are the limitations of these conclusions? What data would you need to be more confident? Are there any potential biases in how this dataset was constructed?
 \end{promptbox}
 
-\begin{followupbox}[Clarifying Follow-up]
+\begin{followupbox}[Clarifying Follow-ups]
+You mention we have month due. Can we learn anything about seasonality of late payments?
+
 If I were presenting these findings to my collections team, what caveats should I include?
 \end{followupbox}
 
@@ -163,6 +169,17 @@ When writing your Objective prompt, use D.A.T.A. (Jasimuddin, 2026):
 \item \textbf{T}echnical Constraints — What to exclude (e.g., ``Ignore credit memos'')
 \item \textbf{A}nswer Style — Output format (e.g., ``Return a ranked table'')
 \end{itemize}
+
+\section{Contact}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Logan Kelly, Ph.D.} & \\[0.3em]
+\textit{Codirector, Small Business AI Clinic} & \textit{Professor of Economics} \\
+Universities of Wisconsin & School of Business and Economics \\
+Office of Business \& Entrepreneurship & University of Wisconsin--River Falls \\
+Phone: 715-425-3335 & Phone: 715-425-3335 \\
+Email: logan.kelly@business.wisconsin.edu & Email: logan.kelly@uwrf.edu \\
+\end{tabular}
 
 \section{References}
 

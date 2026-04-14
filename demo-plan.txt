@@ -30,8 +30,14 @@ I've uploaded two files.
 
 --- FOLLOW-UP ---
 
+Provide summary statistics of the data set. Focus on the possibility of using 
+this data to forecast cash in flow.
+
 Which fields have the most missing data,
 and how might that affect any analysis we do?
+
+Replace the observations with 0 that are actual missing with truly 
+missing values? Store the result as an xlsx file.
 
 --------------------------------------------------------------------------------
 STEP 2 — OBJECTIVE
@@ -105,6 +111,8 @@ STEP 4 — EVALUATION
 </evaluate>
 
 --- FOLLOW-UP ---
+
+You mention we have month due. Can we learning anything about seasonality of late payments?
 
 If I were presenting these findings to my collections team,
 what caveats should I include?
