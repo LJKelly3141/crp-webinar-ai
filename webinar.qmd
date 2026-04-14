@@ -193,6 +193,21 @@ SentinelOne (2026). "AI Risk Mitigation: Tools and Strategies for 2026."
 
 ---
 
+## Next Steps: Level Up Your AI Toolkit
+
+1. **Try Claude Code** — AI that works directly with your files and data
+   - Install: [claude.ai/download](https://claude.ai/download)
+
+2. **Install Python and R** — free tools for data analysis
+   - Python: [python.org](https://www.python.org/downloads/)
+   - R + RStudio: [posit.co/downloads](https://posit.co/download/rstudio-desktop/)
+
+3. **Use GitHub to back up your work** — version control for your projects
+   - Sign up: [github.com](https://github.com/)
+   - AI can help you learn it as you go
+
+---
+
 ## Q&A {.center}
 
 Thank you!
