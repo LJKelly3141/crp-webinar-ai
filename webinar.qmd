@@ -161,8 +161,10 @@ SentinelOne (2026). "AI Risk Mitigation: Tools and Strategies for 2026."
 
 ## Resources
 
-- **GitHub Repo** (coming soon) — slides, data, prompts
-- **Briefing documents** available upon request
+**GitHub Repo:** [github.com/LJKelly3141/crp-webinar-ai](https://github.com/LJKelly3141/crp-webinar-ai)
+
+- Slides, data, prompts, and financial template — all free to download
+- Click the green **Code** button → **Download ZIP** (no account needed)
 
 **Contact:** Dr. Logan Kelly | University of Wisconsin–River Falls
 
