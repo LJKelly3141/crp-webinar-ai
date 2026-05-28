@@ -5,13 +5,18 @@
 .Ruserdata
 
 # Quarto render output
-webinar_files/
+slides/webinar_files/
+handout/handout_files/
+**/*_files/
 
 # OS
 .DS_Store
 
 # Large original dataset (sample is included)
-invoices_with_acct_and_cases_sample.csv
+data-pipeline/invoices_with_acct_and_cases_sample.csv
 
 # Superpowers internal docs
 docs/superpowers/
+
+# Local Claude Code settings
+.claude/

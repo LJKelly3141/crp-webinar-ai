@@ -1,0 +1,185 @@
+---
+title: "Using AI to Analyze and Strengthen Your Business"
+subtitle: "Capital Readiness Program for Women Entrepreneurs"
+author: "Dr. Logan Kelly · Small Business AI Center"
+institute: "Small Business AI Center"
+date: "April 14, 2026"
+format:
+  revealjs:
+    theme: [white, custom.scss]
+    slide-number: true
+    footer: "Dr. Logan Kelly | UWRF"
+    width: 1280
+    height: 720
+    embed-resources: true
+---
+
+## Today's Plan
+
+1. **C.O.R.E. Framework** — A structured way to get useful output from AI
+2. **Live Demo** — C.O.R.E. on real business data (twice)
+3. **Three Things to Try This Week**
+
+::: {.notes}
+~30 sec. Set expectations: short on theory, heavy on demo.
+:::
+
+---
+
+## The C.O.R.E. Framework
+
+| Component | What It Means | What You Do |
+|-----------|--------------|-------------|
+| **C**ontext | Situational awareness | Feed AI your actual business data |
+| **O**bjective | Strategic intent | Tell AI exactly what you want |
+| **R**easoning | Multi-step logic | Make AI show its work |
+| **E**valuation | Risk & validation | Ask AI to critique itself |
+
+::: {.aside}
+Jasimuddin (2026). "How FP&A Professionals Should Prompt AI in 2026." *FP&A Trends*.
+:::
+
+::: {.notes}
+~2 min. This is THE slide. Everything else is just unpacking these four letters.
+:::
+
+---
+
+## C + O — Context and Objective
+
+**Context:** Upload your **actual business files** — invoices, reports, records.
+Modern AI can process thousands of rows instantly.
+
+**Objective — use the D.A.T.A. pattern for sharp goals:**
+
+| | |
+|---|---|
+| **D**ata Source | "Use the January invoice export" |
+| **A**ction | "Identify top 5 late-paying industries" |
+| **T**echnical Constraints | "Ignore credit memos" |
+| **A**nswer Style | "Return a ranked table" |
+
+::: {.aside}
+Jasimuddin (2026); Stellium Consulting (2026).
+:::
+
+::: {.notes}
+~2 min. Context = ground truth. Objective = sharp goal. Mention only 1% of companies are "AI mature" (McKinsey 2025).
+:::
+
+---
+
+## R + E — Reasoning and Evaluation
+
+**Reasoning:** Prompt **"Think step-by-step"** — forces auditable logic and
+reduces hallucinations. Shifts AI from template filler to reasoning partner.
+
+**Evaluation:** Prompt **"Critique your own analysis. What are the limitations?"**
+Human-in-the-loop is **non-negotiable**.
+
+::: {.callout-warning appearance="simple"}
+**Cautionary tale:** Deloitte Australia refunded part of an AU$440,000 contract —
+AI-generated report contained fabricated court quotes.
+:::
+
+::: {.aside}
+Jasimuddin (2026); Probert (2026).
+:::
+
+::: {.notes}
+~2 min. Deloitte story lands the point about Evaluation — even pros get burned without verification.
+:::
+
+---
+
+## Three AI Risks to Know
+
+| Risk | Key Fact |
+|------|---------|
+| **Hallucinations** | Deloitte case — fabricated court quotes (Probert, 2026) |
+| **Data leakage** | 68% of organizations affected (SentinelOne, 2026) |
+| **Model bias** | 70% of firms unprepared for biased outputs (SentinelOne, 2026) |
+
+**The fix is the same in every case: human-in-the-loop verification.**
+
+::: {.notes}
+~1.5 min. Don't dwell — point is: these risks are why Evaluation is in C.O.R.E.
+:::
+
+# Live Demo {.section-header}
+
+---
+
+## Demo: Invoice Collections Analysis
+
+**Walk through C.O.R.E. on a real billing dataset**
+
+- ~50,000 billing transactions
+- One combined C.O.R.E. prompt — watch for the four XML tags
+- Question: which industries pay late?
+
+::: {.notes}
+~8 min including narration. Open the prompts.md file. Read the prompt aloud, hit submit, narrate output.
+:::
+
+---
+
+## Demo: Cash Flow Forecasting
+
+**Same pattern, different data — cash inflows**
+
+- Small business financial projections template
+- All four C.O.R.E. steps in a single prompt
+- Scenario: what if revenue drops 20% in Q3?
+
+::: {.notes}
+~7 min. Different data, same prompt shape. That's the whole point.
+:::
+
+# Your Move {.section-header}
+
+---
+
+## Three Things to Try This Week
+
+1. **Anonymize a file and run a C.O.R.E. prompt**
+   Remove names/IDs, upload to ChatGPT or Claude.
+
+2. **Add a self-critique prompt to any AI output**
+   "Audit this for errors or unsupported assumptions."
+
+3. **Document your AI tools**
+   List every AI tool and dataset your business uses today.
+
+::: {.notes}
+~1.5 min. These are in the handout. Read each one out loud.
+:::
+
+---
+
+## Resources & Contact
+
+**Repo & downloads:** [github.com/LJKelly3141/crp-webinar-ai](https://github.com/LJKelly3141/crp-webinar-ai)
+
+Slides · Handout · Invoice data · Data dictionary · Financial template
+
+---
+
+**Logan Kelly, Ph.D.**
+
+| | |
+|---|---|
+| Codirector, Small Business AI Clinic | Professor of Economics |
+| Universities of Wisconsin · OBE | UW–River Falls · SBE |
+| logan.kelly@business.wisconsin.edu | logan.kelly@uwrf.edu |
+| 715-425-3335 | 715-425-3335 |
+
+::: {.notes}
+~1 min. Point to the handout for full reference list and "level up your toolkit" suggestions.
+:::
+
+---
+
+## Q&A {.center}
+
+Thank you!

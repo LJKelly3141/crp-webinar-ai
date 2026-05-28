@@ -1,0 +1,222 @@
+---
+title: "Using AI to Analyze and Strengthen Your Business"
+subtitle: "Audience Notes — Capital Readiness Program Webinar"
+author: "Dr. Logan Kelly | Small Business AI Center"
+date: "April 14, 2026"
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=0.75in
+    fontsize: 10pt
+    include-in-header:
+      text: |
+        \usepackage{booktabs}
+        \usepackage{xcolor}
+        \definecolor{uwrfred}{HTML}{BE0F34}
+        \definecolor{uwrfblue}{HTML}{2EC7FF}
+        \definecolor{promptbg}{HTML}{F5F5F5}
+        \usepackage{enumitem}
+        \setlist{nosep, leftmargin=1.2em}
+        \usepackage{titlesec}
+        \titleformat{\section}{\large\bfseries\color{uwrfred}}{}{0em}{}[\vspace{-0.3em}\rule{\textwidth}{0.5pt}]
+        \titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+        \titleformat{\subsubsection}{\small\bfseries\itshape}{}{0em}{}
+        \titlespacing*{\section}{0pt}{1.2em}{0.4em}
+        \titlespacing*{\subsection}{0pt}{0.8em}{0.2em}
+        \titlespacing*{\subsubsection}{0pt}{0.5em}{0.2em}
+        \usepackage{tcolorbox}
+        \tcbuselibrary{breakable}
+        \newtcolorbox{promptbox}[1][]{
+          colback=promptbg,
+          colframe=uwrfred,
+          fonttitle=\small\bfseries,
+          boxrule=0.5pt,
+          arc=2pt,
+          left=6pt, right=6pt, top=4pt, bottom=4pt,
+          breakable,
+          title=#1
+        }
+        \newtcolorbox{followupbox}[1][]{
+          colback=white,
+          colframe=uwrfblue,
+          fonttitle=\small\bfseries,
+          boxrule=0.5pt,
+          arc=2pt,
+          left=6pt, right=6pt, top=4pt, bottom=4pt,
+          breakable,
+          title=#1
+        }
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        \fancyhf{}
+        \fancyfoot[C]{\small\color{gray} github.com/LJKelly3141/crp-webinar-ai}
+        \fancyfoot[R]{\small\color{gray}\thepage}
+        \renewcommand{\headrulewidth}{0pt}
+---
+
+\begin{center}
+{\small Universities of Wisconsin — Office of Business \& Entrepreneurship}
+\end{center}
+
+\section{The C.O.R.E. Framework}
+
+The C.O.R.E. framework structures your interaction with AI so you get useful, grounded output instead of generic suggestions (Jasimuddin, 2026).
+
+\begin{itemize}
+\item \textbf{Context} — Feed AI your actual business data (spreadsheets, reports, records)
+\item \textbf{Objective} — Tell it exactly what you want with sharp, specific goals
+\item \textbf{Reasoning} — Make it show its work step-by-step
+\item \textbf{Evaluation} — Ask it to critique itself, then verify it yourself
+\end{itemize}
+
+\subsection{How to Use This Handout}
+
+Each prompt below is ready to copy and paste into Claude, ChatGPT, or any AI assistant. The prompts follow the C.O.R.E. framework in order. After each main prompt, a \textbf{clarifying follow-up} shows how to dig deeper — this models good practice for iterative AI interaction.
+
+\textbf{All data files are available at:} \texttt{github.com/LJKelly3141/crp-webinar-ai}
+
+Click the green \textbf{Code} button $\rightarrow$ \textbf{Download ZIP} (no account needed).
+
+\section{Demo 1: Invoice Collections Analysis}
+
+\textbf{Files to upload:} \texttt{invoices\_sample\_50k.csv} and \texttt{Data\_Dictionary.csv}
+
+\subsection{Combined C.O.R.E. Prompt}
+
+\begin{promptbox}[Prompt]
+I've uploaded two files: a billing transactions dataset (\texttt{invoices\_sample\_50k.csv}) and its data dictionary (\texttt{Data\_Dictionary.csv}). Please analyze this data using the C.O.R.E. framework.
+
+\texttt{<context>}\\
+\hspace*{1em}--- Billing transactions for a small business\\
+\hspace*{1em}--- Each row is one invoice\\
+\hspace*{1em}--- Some invoices are open, some paid, some written off\\
+\texttt{</context>}
+
+\texttt{<objective>}\\
+\hspace*{1em}Identify the top 5 industries with the highest rate of late\\
+\hspace*{1em}payments (where DAYS\_TO\_PAY > 30). For each, report the late\\
+\hspace*{1em}payment rate and the average days to pay. Return as a ranked table.\\
+\texttt{</objective>}
+
+\texttt{<reasoning>}\\
+\hspace*{1em}Think step-by-step. Before producing the table:\\
+\hspace*{1em}--- Confirm which fields identify industry and lateness\\
+\hspace*{1em}--- Note any data quality issues you had to handle\\
+\hspace*{1em}--- Show how you computed the late payment rate\\
+\texttt{</reasoning>}
+
+\texttt{<evaluation>}\\
+\hspace*{1em}After the table, critique your own analysis:\\
+\hspace*{1em}--- What are the limitations of this conclusion?\\
+\hspace*{1em}--- What biases might exist in how this sample was constructed?\\
+\hspace*{1em}--- What would you want to verify before acting on this?\\
+\texttt{</evaluation>}
+\end{promptbox}
+
+\begin{followupbox}[Clarifying Follow-up (if time)]
+Can you break the top industry down by payment type (Check vs.\ Wire Transfer vs.\ Credit Card) --- is the late payment rate driven by one payment method?
+\end{followupbox}
+
+\section{Demo 2: Cash Flow Forecasting}
+
+\textbf{File to upload:} \texttt{Ventura Financial Projections Template Jan 2022 v3.xlsx}
+
+\subsection{Combined C.O.R.E. Prompt}
+
+\begin{promptbox}[Prompt]
+I've uploaded a small business financial projections template.
+Please analyze it using the C.O.R.E. framework:
+
+\texttt{<context>}\\
+\hspace*{1em}This is a small business financial model\\
+\hspace*{1em}with revenue projections and expense assumptions.\\
+\texttt{</context>}
+
+\texttt{<objective>}\\
+\hspace*{1em}Forecast monthly cash inflows for the next 12 months\\
+\hspace*{1em}based on the revenue assumptions in this workbook.\\
+\texttt{</objective>}
+
+\texttt{<reasoning>}\\
+\hspace*{1em}Walk through your assumptions step by step:\\
+\hspace*{1em}--- What revenue line items are you using?\\
+\hspace*{1em}--- How are you converting revenue projections to cash inflows?\\
+\hspace*{1em}--- What timing assumptions are you making?\\
+\texttt{</reasoning>}
+
+\texttt{<evaluation>}\\
+\hspace*{1em}--- What are the biggest risks to this forecast?\\
+\hspace*{1em}--- Where might the assumptions break down?\\
+\texttt{</evaluation>}
+\end{promptbox}
+
+\begin{followupbox}[Clarifying Follow-up]
+What would happen to the forecast if revenue came in 20\% below projections in Q3? Show me the revised monthly cash inflow numbers.
+\end{followupbox}
+
+\section{Three Things to Try This Week}
+
+\begin{enumerate}
+\item \textbf{Anonymize a file and run a C.O.R.E. prompt.} Remove names, account numbers, and IDs. Upload to ChatGPT or Claude. Use the combined prompt format from Demo 1 or 2 as a starting point.
+\item \textbf{Add a self-critique prompt to any AI output.} ``Audit this for errors or unsupported assumptions.'' Treat this as a required final step.
+\item \textbf{Document your AI tools.} List every AI tool and dataset your business uses today --- that inventory is the foundation for AI governance.
+\end{enumerate}
+
+\section{Try It With Your Own Data}
+
+\begin{enumerate}
+\item \textbf{Anonymize} a file from your business --- remove names, account numbers, IDs
+\item \textbf{Upload} it to ChatGPT or Claude
+\item \textbf{Walk through C.O.R.E.} --- Context, Objective, Reasoning, Evaluation
+\item \textbf{Always verify} --- AI assists, you decide
+\end{enumerate}
+
+\subsection{The D.A.T.A. Framework for Sharp Objectives}
+
+When writing your Objective prompt, use D.A.T.A. (Jasimuddin, 2026):
+
+\begin{itemize}
+\item \textbf{D}ata Source --- Which file or tab to use
+\item \textbf{A}ction --- The sharp goal (e.g., ``Identify top 5 late-paying industries'')
+\item \textbf{T}echnical Constraints --- What to exclude (e.g., ``Ignore credit memos'')
+\item \textbf{A}nswer Style --- Output format (e.g., ``Return a ranked table'')
+\end{itemize}
+
+\section{Level Up Your AI Toolkit}
+
+When you're ready to go beyond chat interfaces:
+
+\begin{itemize}
+\item \textbf{Try Claude Code} --- AI that works directly with your files and data. Install at \texttt{claude.ai/download}.
+\item \textbf{Install Python and R} --- free tools for data analysis. Python: \texttt{python.org}. R + RStudio: \texttt{posit.co/download/rstudio-desktop}.
+\item \textbf{Use GitHub} --- version control for your work and easy backup. Sign up at \texttt{github.com}. AI can help you learn it.
+\end{itemize}
+
+\section{Contact}
+
+\begin{tabular}{@{}ll@{}}
+\textbf{Logan Kelly, Ph.D.} & \\[0.3em]
+\textit{Codirector, Small Business AI Clinic} & \textit{Professor of Economics} \\
+Universities of Wisconsin & School of Business and Economics \\
+Office of Business \& Entrepreneurship & University of Wisconsin--River Falls \\
+Phone: 715-425-3335 & Phone: 715-425-3335 \\
+Email: logan.kelly@business.wisconsin.edu & Email: logan.kelly@uwrf.edu \\
+\end{tabular}
+
+\section{References}
+
+{\small
+\begin{enumerate}
+\item Badmus \& Ekoh (2026). ``The Impact of AI on Business Growth in SMEs.'' \textit{IRE Journals}.
+\item David (2026). ``AI in performance management.'' \textit{MiHCM}.
+\item Gonzalez de Villaumbrosia (2026). ``15 AI Business Use Cases in 2026.'' \textit{Product School}.
+\item Jasimuddin (2026). ``How FP\&A Professionals Should Prompt AI in 2026.'' \textit{FP\&A Trends}.
+\item Mayer et al.\ (2025). ``AI in the workplace.'' \textit{McKinsey \& Company}.
+\item Mehta (2026). ``AI in Business: 7 Examples.'' \textit{Crescendo.ai}.
+\item Perlstein (2026). ``6 AI-powered Market Trend Analysis Tools.'' \textit{Revuze}.
+\item Probert (2026). ``How AI Is Transforming the Consulting Industry.'' \textit{Whitehat SEO}.
+\item SentinelOne (2026). ``AI Risk Mitigation: Tools and Strategies for 2026.''
+\item Stellium Consulting (2026). ``2026 AI Trends: What Enterprises Need to Know.''
+\end{enumerate}
+}

@@ -1,0 +1,122 @@
+/*-- scss:defaults --*/
+
+// UWRF official brand colors
+$uwrf-red: #BE0F34;
+$uwrf-dark-red: #8F010A;
+$uwrf-blue: #2EC7FF;
+$uwrf-black: #000000;
+$uwrf-white: #FFFFFF;
+$uwrf-gray: #CACACA;
+
+$backgroundColor: $uwrf-white;
+$mainColor: #333333;
+$headingColor: $uwrf-red;
+$presentation-heading-color: $uwrf-red;
+$link-color: $uwrf-blue;
+$body-color: #333333;
+$presentation-font-size-root: 32px;
+$presentation-heading-font: Impact, Arial Black, sans-serif;
+$body-font: Arial, Helvetica, sans-serif;
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+
+/*-- scss:rules --*/
+
+.reveal {
+  background-color: $uwrf-white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reveal .slides section.quarto-title-block h1,
+.reveal .slides section.quarto-title-block .title {
+  color: $uwrf-red;
+  font-family: Impact, Arial Black, sans-serif;
+  text-transform: uppercase;
+}
+
+.reveal .slides section.quarto-title-block .subtitle {
+  color: $uwrf-black;
+  font-weight: 600;
+}
+
+.reveal h1, .reveal h2 {
+  font-family: Impact, Arial Black, sans-serif;
+  text-transform: uppercase;
+  color: $uwrf-red;
+}
+
+.reveal section ul {
+  font-size: 0.8em;
+  list-style-type: disc;
+}
+
+.reveal section ul li {
+  margin-bottom: 0.4em;
+  color: $uwrf-black;
+}
+
+.reveal section ul li::marker {
+  color: $uwrf-black;
+}
+
+// Tables
+.reveal table {
+  color: #333;
+  font-size: 0.7em;
+}
+
+.reveal table th {
+  color: $uwrf-red;
+  border-bottom: 3px solid $uwrf-red;
+}
+
+.reveal table td {
+  border-bottom: 1px solid $uwrf-gray;
+}
+
+// Bold text
+.reveal strong {
+  color: $uwrf-black;
+}
+
+// Controls and footer
+.reveal .slide-number {
+  color: #999;
+}
+
+.reveal .controls button {
+  color: $uwrf-red;
+}
+
+.reveal .footer {
+  color: #999;
+}
+
+// Section headers
+.section-header {
+  background-color: $uwrf-red !important;
+  color: $uwrf-white !important;
+
+  h2 {
+    color: $uwrf-white !important;
+  }
+}
+
+// Aside / citation footnotes
+.reveal .aside {
+  font-size: 0.5em;
+  color: #888;
+}
+
+// Blockquotes
+.reveal blockquote {
+  border-left: 4px solid $uwrf-red;
+  padding: 0.5em 1em;
+  font-style: italic;
+  background: #f9f9f9;
+  font-size: 0.85em;
+}
+
+// Smaller text helper
+.small {
+  font-size: 0.7em;
+}

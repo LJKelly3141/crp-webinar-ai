@@ -1,0 +1,23 @@
+.reveal .aside {
+  font-size: 0.55em;
+  color: #555;
+  margin-top: 0.5em;
+  font-style: italic;
+}
+.reveal .callout-warning {
+  background-color: #FFF4E6;
+  border-left: 6px solid #F59E0B;
+  padding: 0.6em 0.9em;
+  margin: 0.6em 0;
+  border-radius: 4px;
+}
+.reveal aside.notes {
+  display: none;
+}
+.reveal .section-header h1 {
+  font-size: 2.2em;
+  text-align: center;
+}
+.reveal h2 { color: #BE0F34; }
+.reveal table { font-size: 0.7em; }
+.reveal table th, .reveal table td { padding: 0.25em 0.6em; }
